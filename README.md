@@ -33,7 +33,7 @@ And function drawpixel(x, y, rgb);
 Just draw a pixel on x,y with color rgb
 ```c
 #include <stdio.h>
-#80
+
 int main(void){
     for(int x=0; x<100;x++){
         for (int y=0; y<100; y++){
