@@ -18,7 +18,7 @@ uint8_t *fbp;
 int read_fb(char *device);
 
 //draw a pixel on x and y
-//with color @r @g @b @a
+//with color #rgb
 void drawpixel(uint32_t x, uint32_t y, const char *rgb);
 
 void drawrect(int x, int y, int x1, int y1, const char *rgb, int border, int border_size);
