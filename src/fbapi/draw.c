@@ -57,7 +57,7 @@ void drawrect(int x, int y, int x2, int y2, const char *rgb, int border, int bor
 				} else {
 					drawpixel(i_x, i_y, rgb);
 				}
-			}else{
+			} else {
 				//draw a pixel on i_x and on i_y with rgba color.
 				drawpixel(i_x, i_y, rgb);
 			}
