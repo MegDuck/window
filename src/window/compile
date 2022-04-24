@@ -1,0 +1,1 @@
+gcc -pthread window.c ../fbapi/graphics/util.c ../fbapi/graphics/util.h ../fbapi/graphics/draw.c ../fbapi/graphics/draw.h
