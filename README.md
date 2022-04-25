@@ -10,7 +10,6 @@ There is in file:
 drawrect(int x, int y, int x1, int y1, const char *rgb, int border);
 
 this function draw a rectangle from x, y, to x1, y1 with color rgb(HEX)
-and if border == 1, draw border.
 
 example:
 ```c
