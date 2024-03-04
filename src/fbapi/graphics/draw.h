@@ -1,13 +1,19 @@
-#ifndef DRAW_H
-#define DRAW_H
-#include <stdint.h>
-int read_fb(char *device);
+#pragma once
+#include <cstdlib>
+#include <cstddef>
 
-//draw a pixel on x and y
-//with color #rgb
+extern "C" {
+    #include <linux/fb.h>
+    #include <fcntl.h> 
+    #include <sys/ioctl.h>
+    #include <sys/mman.h>
+    #include <inttypes.h>
+    #include <stdint.h>
+    #include <unistd.h>
+}
+
 void drawpixel(uint32_t x, uint32_t y, const char *rgb);
 
 void drawrect(int x, int y, int x1, int y1, const char *rgb);
 
 int fb_init();
-#endif
